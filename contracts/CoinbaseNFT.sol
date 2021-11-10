@@ -10,8 +10,11 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 contract CoinbaseNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
+    string private _collectionURI;
 
-    constructor() ERC721("Coinbase", "COINBASE") {}
+    constructor() ERC721("Coinbase", "COINBASE") {
+        setCollectionURI("https://gateway.pinata.cloud/ipfs/QmNUL9SXe1iyhFEfhzkPoMN6j7BgbkZ9Avs5b6aMeUaagC/collection-metadata.json");
+    }
 
     function mintNFT(address recipient, string memory tokenURI)
         public onlyOwner
@@ -24,5 +27,13 @@ contract CoinbaseNFT is ERC721URIStorage, Ownable {
         _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
+    }
+
+    function setCollectionURI(string memory collectionURI) internal virtual onlyOwner {
+        _collectionURI = collectionURI;
+    }
+
+    function contractURI() public view returns (string memory) {
+        return _collectionURI;
     }
 }

@@ -1,6 +1,6 @@
 require("dotenv").config()
 
-const API_URL = process.env.RINKEBY_API_URL
+const API_URL = process.env.RINKEBY_API_URL // change this based on network!
 const PUBLIC_KEY = process.env.PUBLIC_KEY
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 
@@ -58,5 +58,5 @@ async function mintNFTs(mintList) {
   console.log(`Minting is complete! Minted ${mintList.length} tokens`);
 }
 
-const mints = require("../mints/mint-data.json")
+const mints = require("../mint-queue/mint-data.json")
 mintNFTs(mints)

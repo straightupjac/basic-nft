@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/jaclynchan/Documents/code/basic-nft/contracts/CoinbaseNFT.sol": {
-      "lastModificationDate": 1636559450655,
-      "contentHash": "b293bee8327be1f451d37139f7253f28",
+      "lastModificationDate": 1636562573355,
+      "contentHash": "c24b966462753fb2b4ebfc78a1d64e85",
       "sourceName": "contracts/CoinbaseNFT.sol",
       "solcConfig": {
         "version": "0.8.0",
