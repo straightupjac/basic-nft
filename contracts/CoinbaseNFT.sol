@@ -13,7 +13,7 @@ contract CoinbaseNFT is ERC721URIStorage, Ownable {
     string private _collectionURI;
 
     constructor() ERC721("Coinbase", "COINBASE") {
-        setCollectionURI("https://gateway.pinata.cloud/ipfs/QmNUL9SXe1iyhFEfhzkPoMN6j7BgbkZ9Avs5b6aMeUaagC/collection-metadata.json");
+        setCollectionURI("https://gateway.pinata.cloud/ipfs/QmVmCaBNDeH37gZDMPef4vrfpXMUtxfoGMnjRMk5BErFNf/collection-metadata.json");
     }
 
     function mintNFT(address recipient, string memory tokenURI)
