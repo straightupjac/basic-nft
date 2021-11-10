@@ -19,9 +19,9 @@
     ```
 
 ## Steps to Mint
-1. Copy `mints/mint-data-example.json` and include all the tokenURIs and their corresponding target addresses
+1. Copy `mint-queue/mint-data-example.json` and include all the tokenURIs and their corresponding target addresses
     ```
-    cp mints/mint-data-example.json mints/mint-data.json
+    cp mint-queue/mint-data-example.json mints/mint-data.json
     ```
 2. Mint the tokens
     ```
