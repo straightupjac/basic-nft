@@ -1,0 +1,22 @@
+{
+  "name": "basic-nft",
+  "version": "1.0.0",
+  "description": "basic script to deploy and mint an ERC721",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/straightupjac/basic-nft.git"
+  },
+  "author": "straightupjac",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.8"
+  }
+}
